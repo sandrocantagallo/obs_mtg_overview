@@ -45,8 +45,8 @@
 
 ### COMANDI DA TASTIERA
 
-    | Tasto | Funzione             |
-    | ----- | -------------------- |
+    | Tasto | Funzione |
+    | --- | --- |
     | Q / A | Vita Player A ±      |
     | P / L | Vita Player B ±      |
     | W / O | Win Player A / B     |
@@ -56,8 +56,8 @@
     | T     | Start/Stop Timer     |
     | B     | Sideboard Mode       |
 
-    | Tasto | Mana             |
-    | ----- | ---------------- |
+    | Tasto | Mana |
+    | --- | --- |
     | `1`   | White            |
     | `2`   | Blue             |
     | `3`   | Black            |
@@ -66,8 +66,8 @@
     | `6`   | Colorless        |
     | `R`   | **RESET mana A** |
 
-    | Tasto | Mana             |
-    | ----- | ---------------- |
+    | Tasto | Mana |
+    | --- | --- |
     | `7`   | White            |
     | `8`   | Blue             |
     | `9`   | Black            |
@@ -76,13 +76,13 @@
     | `=`   | Colorless        |
     | `I`   | **RESET mana B** |
 
-    | Tasto | Azione               |
-    | ----- | -------------------- |
+    | Tasto | Azione |
+    | --- | --- |
     | `N`   | Cambia nome Player A |
     | `K`   | Cambia nome Player B |
 
-    | Tasto | Azione               |
-    | ----- | -------------------- |
+    | Tasto | Azione |
+    | --- | --- |
     | `Z`   | Giocatore 1 Attivo |
     | `M`   | Giocatore 2 Attivo |
 
@@ -118,7 +118,7 @@
 
 ### KEYBOARD COMMANDS
 
-    | Key | Function             |
+    | Key | Function |
     | --- | --- |
     | Q / A | Player A Life ±    |
     | P / L | Player B Life ±    |
@@ -129,7 +129,7 @@
     | T     | Start/Stop Timer   |
     | B     | Sideboard Mode     |
 
-    | Key | Mana        |
+    | Key | Mana |
     | --- | --- |
     | `1` | White       |
     | `2` | Blue        |
@@ -139,25 +139,25 @@
     | `6` | Colorless  |
     | `R` | **RESET mana A** |
 
-    | Key | Mana        |
+    | Key | Mana |
     | --- | --- |
-    | `7` | White       |
-    | `8` | Blue        |
-    | `9` | Black       |
-    | `0` | Red         |
-    | `-` | Green       |
-    | `=` | Colorless  |
+    | `7` | White |
+    | `8` | Blue |
+    | `9` | Black |
+    | `0` | Red |
+    | `-` | Green |
+    | `=` | Colorless |
     | `I` | **RESET mana B** |
 
-    | Key | Action               |
+    | Key | Action |
     | --- | --- |
     | `N` | Change Player A Name |
     | `K` | Change Player B Name |
 
-    | Key | Action               |
+    | Key | Action |
     | --- | --- |
-    | `Z` | Player 1 Active     |
-    | `M` | Player 2 Active     |
+    | `Z` | Player 1 Active |
+    | `M` | Player 2 Active |
 
 ## RESETTING THE INTERFACE
 
