@@ -1,0 +1,225 @@
+@font-face {
+    font-family: "Planewalker";
+    src: url("assets/fonts/Planewalker.ttf");
+}
+
+body {
+    margin: 0;
+    background: transparent;
+    font-family: "Planewalker";
+    color: #e6d8a8;
+}
+
+#overlay {
+    width: 1920px;
+    height: 1080px;
+    position: relative;
+}
+
+/* MATCH INFO */
+#match-info {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+}
+
+/* PLAYER BOX */
+.player {
+    position: absolute;
+    width: 420px;
+    padding: 15px;
+    background: rgba(5, 5, 5, 0.9);
+    border: 2px solid;
+    animation: fadeIn 1s ease;
+}
+
+.left {
+    top: 50px;
+    left: 20px;
+    border-color: #8b0000;
+}
+
+.right {
+    top: 50px;
+    right: 20px;
+    border-color: #003366;
+}
+
+.life {
+    font-size: 64px;
+    text-align: center;
+    animation: pulse 2s infinite;
+}
+
+.mana img {
+    width: 28px;
+    margin-right: 4px;
+    animation: glow 2s infinite;
+}
+
+/* CARD ZOOM */
+#card-zoom {
+    position: absolute;
+    top: 140px;
+    left: 760px;
+    width: 400px;
+    height: 560px;
+    border: 3px solid #b8860b;
+    background: black;
+    animation: zoomIn 0.6s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+/* STACK */
+#stack {
+    position: absolute;
+    right: 20px;
+    bottom: 260px;
+    width: 360px;
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid #444;
+}
+
+#stack li {
+    padding: 6px;
+    animation: slideIn 0.4s ease;
+}
+
+#stack li.top {
+    background: rgba(180, 60, 60, 0.4);
+    box-shadow: 0 0 10px red;
+}
+
+/* TIMER */
+#timer {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 36px;
+}
+
+/* SIDEBOARD */
+#sideboard {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 40px;
+    font-size: 36px;
+    background: rgba(0, 0, 0, 0.95);
+    border: 3px solid gold;
+}
+
+/* ACTIVE PLAYER VISUAL */
+.player.active {
+    box-shadow: 0 0 20px 6px gold;
+    border-color: gold !important;
+    animation: activePulse 1.5s infinite;
+}
+
+.active-indicator {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 32px;
+    color: gold;
+    opacity: 0;
+}
+
+.player.active .active-indicator {
+    opacity: 1;
+}
+
+/* ACTIVE PULSE */
+@keyframes activePulse {
+    0% {
+        box-shadow: 0 0 10px gold;
+    }
+
+    50% {
+        box-shadow: 0 0 25px gold;
+    }
+
+    100% {
+        box-shadow: 0 0 10px gold;
+    }
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.7);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(40px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 4px gold);
+    }
+
+    50% {
+        filter: drop-shadow(0 0 12px gold);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        color: #e6d8a8;
+    }
+
+    50% {
+        color: #ff4444;
+    }
+}
+
+
+/*
+    PERSONALIZZAZIONI
+*/
+
+ul#stackList li {
+    /* rimuovo i punti della lista*/
+    list-style-type: none;
+    /* il testo tutto in maiuscolo */
+    text-transform: uppercase;
+}
+
+.player {
+    width: 201px;
+}
+.player h2 {
+    margin-bottom:0px;
+}
+#stack {
+    padding: 10px;
+}

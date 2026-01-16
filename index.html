@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MTG OBS Overlay</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="overlay">
+
+        <!-- PLAYER A -->
+        <div class="player left" id="playerA">
+            <div class="active-indicator">▶</div>
+            <h2 id="nameA">Player A</h2>
+            <div class="life" id="lifeA">20</div>
+            <div class="wins">Vittorie: <span id="winsA">0</span></div>
+            <div class="mana" id="manaA"></div>
+            <div class="hand" id="handA"></div>
+                
+            </div>
+        </div>
+
+        <!-- PLAYER B -->
+        <div class="player right" id="playerB">
+            <h2 id="nameB">Player B</h2>
+            <div class="active-indicator">▶</div>
+            <div class="life" id="lifeB">20</div>
+            <div class="wins">Vittorie: <span id="winsB">0</span></div>
+            <div class="mana" id="manaB"></div>
+            <div class="hand" id="handB"></div>
+                
+            </div>
+        </div>
+
+        <!-- CARD ZOOM -->
+        <div id="card-zoom" class="hidden">
+            <img id="cardImage">
+        </div>
+
+        <!-- STACK -->
+        <div id="stack">
+            <h3>STACK</h3>
+            <ul id="stackList"></ul>
+        </div>
+
+        <!-- TURN TIMER -->
+        <div id="timer">00:00</div>
+
+        <!-- SIDEBOARD -->
+        <div id="sideboard" class="hidden">
+            <h3>SIDEBOARDING</h3>
+        </div>
+
+    </div>
+
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
